@@ -10,9 +10,9 @@
 </head>
 
 <body class="bg-gray-700">
-    <nav class="bg-green-900 py-1 relative">
+    <nav class="bg-green-900 py-2 relative">
 
-        <div class="max-w-4xl  mx-auto px-4 text-white capitalize">
+        <div class="max-w-6xl xl-max:max-w-4xl  mx-auto px-4 text-white capitalize">
             <div class="flex justify-between items-center">
                 <!-- logo here -->
                 <div>
@@ -23,8 +23,8 @@
                 </div>
 
                 <!-- screen menu -->
-                <div class="flex items-center space-x-4 justify-between">
-                    <div class="hidden md:flex flex items-center">
+                <div class="flex md-max:hidden items-center space-x-4 justify-between">
+                    <div class="flex flex items-center">
                         <a href="#" class="mx-2 duration-300 text-gray-300 py-1 hover:text-white">
                             <span>About</span>
                         </a>
@@ -35,8 +35,8 @@
                 </div>
 
                 <!-- mobile menu -->
-                <div class="md:hidden flex items-center">
-                    <button class="mobile-menu-button">
+                <div class="hidden md-max:flex items-center">
+                    <button id="mobile-menu-button">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path
                                 d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
@@ -45,14 +45,14 @@
                 </div>
             </div>
         </div>
-        <div class="md:hidden hidden overflow-hidden duration-300 mobile-menu capitalize absolute w-full top-16">
+        <div id="mobile-menu" class="md:hidden hidden overflow-hidden duration-300  capitalize absolute w-full top-18">
 
             <a href="#"
-                class="block py-2 px-4 text-sm bg-green-200 hover:bg-green-400 duration-300 border border-green-800 hover:text-green-900">
+                class="block py-2 px-4 text-sm bg-green-600 hover:bg-green-500 duration-300 border border-green-800 hover:text-green-900 font-bold">
                 about
             </a>
             <a href="#"
-                class="block py-2 px-4 text-sm bg-green-200 hover:bg-green-400 duration-300 hover:text-green-900">
+                class="block py-2 px-4 text-sm bg-green-600 hover:bg-green-500 duration-300 border border-green-800 hover:text-green-900 font-bold">
                 contact
             </a>
 
@@ -61,25 +61,25 @@
     </nav>
 
     <div class="container my-10">
-        <header class="w-full rounded py-10 bg-white mb-10">
-            <div class="md:px-10 px-4">
+        <header class="max-w-2xl  mx-auto rounded py-8 bg-white mb-10">
+            <div class="md:px-10 px-6">
                 <img src="./image/logo.png" class="h-20 mx-auto mb-4" alt="logo">
 
-                <h1 class="font-bold text-center md:text-4xl text-xl mb-10">Welcome To FRZH website !</h1>
-                <p class="text-center mx-auto text-sm sm:text-lg ">In this site my codes  from my github. this process works with github/api and all my Repositories show here.
+                <h1 class="font-bold text-center text-4xl md-max:text-2xl mb-10 text-green-900">Welcome To FRZH website !</h1>
+                <p class="text-center mx-auto md-max:text-base sm-max:text-sm text-lg font-bold">In this site my codes  from my github. this process works with github/api and all my Repositories show here.
                 This Page was made with Tailwind </p>
             </div>
             
         </header>
         
-        <div class="flex items-center justify-center py-10">
-            <div class="my-6 relative">
-                <div class="md:w-3/4 w-full">
+        <div class="flex items-center justify-center py-10 my-10">
+            <div class="my-6 relative ">
+                <div class="w-3/4 md-max:w-full">
                     <img src="./image/item1.png" class="object-contain " alt="item1">
                 </div>
-                <div class="flex flex-col md:w-1/2 w-full bg-white rounded p-5 justify-center md:absolute right-0 -bottom-10">
+                <div class="flex flex-col w-1/2 md-max:w-full bg-white md:rounded md:p-5 p-3 justify-center md:absolute right-0 -bottom-10">
                     
-                    <h1 class="capitalize my-2 text-lg font-bold">program one</h1>
+                    <h1 class="capitalize my-2 text-xl font-bold">program one</h1>
                     <p class="my-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ullam unde
                         voluptatum impedit ipsa aut numquam. Nulla ullam quidem recusandae dicta odit excepturi
                         expedita reiciendis pariatur. Possimus, assumenda similique. Omnis.</p>
