@@ -1,0 +1,20 @@
+{
+  "name": "FirstProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.8"
+  },
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o dist/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
