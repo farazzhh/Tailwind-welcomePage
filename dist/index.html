@@ -10,7 +10,123 @@
 </head>
 
 <body class="bg-gray-700">
-   
+    <nav class="bg-green-900 py-1 relative">
+
+        <div class="max-w-4xl  mx-auto px-4 text-white capitalize">
+            <div class="flex justify-between items-center">
+                <!-- logo here -->
+                <div>
+                    <a href="#" class="flex items-center">
+                        <img src="./image/logo.png" class="h-14 mx-auto" alt="logo">
+                        <span class="text-green-100 ml-1">FRZH</span>
+                    </a>
+                </div>
+
+                <!-- screen menu -->
+                <div class="flex items-center space-x-4 justify-between">
+                    <div class="hidden md:flex flex items-center">
+                        <a href="#" class="mx-2 duration-300 text-gray-300 py-1 hover:text-white">
+                            <span>About</span>
+                        </a>
+                        <a href="#" class="mx-2 duration-300 text-gray-300 py-1 hover:text-white">
+                            <span>Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- mobile menu -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path
+                                d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden overflow-hidden duration-300 mobile-menu capitalize absolute w-full top-16">
+
+            <a href="#"
+                class="block py-2 px-4 text-sm bg-green-200 hover:bg-green-400 duration-300 border border-green-800 hover:text-green-900">
+                about
+            </a>
+            <a href="#"
+                class="block py-2 px-4 text-sm bg-green-200 hover:bg-green-400 duration-300 hover:text-green-900">
+                contact
+            </a>
+
+        </div>
+
+    </nav>
+
+    <div class="container mt-10">
+        <header>
+            <div class="flex items-center justify-center h-80v">
+                <div class=" flex lg:flex-row flex-col rounded-2xl bg-white overflow-hidden my-6">
+                    <img src="./image/item1.png" class="object-contain lg:w-2/4 lg:h-full h-2/4 w-full " alt="item1">
+                    <div class="lg:w-2/4 lg:h-full h-2/4 w-full flex flex-col p-5 justify-center">
+                        <h1 class="capitalize my-2 text-lg">program one</h1>
+                        <p class="my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ullam unde
+                            voluptatum impedit ipsa aut numquam. Nulla ullam quidem recusandae dicta odit excepturi
+                            expedita reiciendis pariatur. Possimus, assumenda similique. Omnis.</p>
+
+                        <a href="#" class="btn btn-green p-3 text-center duration-300 shadow">More...</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex items-center justify-center h-80v">
+                <div class=" flex lg:flex-row flex-col rounded-2xl bg-white overflow-hidden my-6">
+                    <img src="./image/item1.png" class="object-contain lg:w-2/4 lg:h-full h-2/4 w-full " alt="item1">
+                    <div class="lg:w-2/4 lg:h-full h-2/4 w-full flex flex-col p-5 justify-center">
+                        <h1 class="capitalize my-2 text-lg">program one</h1>
+                        <p class="my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ullam unde
+                            voluptatum impedit ipsa aut numquam. Nulla ullam quidem recusandae dicta odit excepturi
+                            expedita reiciendis pariatur. Possimus, assumenda similique. Omnis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center h-80v">
+                <div class=" flex lg:flex-row flex-col rounded-2xl bg-white overflow-hidden my-6">
+                    <img src="./image/item1.png" class="object-contain lg:w-2/4 lg:h-full h-2/4 w-full " alt="item1">
+                    <div class="lg:w-2/4 lg:h-full h-2/4 w-full flex flex-col p-5 justify-center">
+                        <h1 class="capitalize my-2 text-lg">program one</h1>
+                        <p class="my-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ullam unde
+                            voluptatum impedit ipsa aut numquam. Nulla ullam quidem recusandae dicta odit excepturi
+                            expedita reiciendis pariatur. Possimus, assumenda similique. Omnis.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+
+
+        <!-- BUTTON COMPONENT -->
+        <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">Find Friends</button>
+        <button class="btn btn-green">Find Groups</button>
+
+
+        <!-- ALERT COMPONENT -->
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative my-5" role="alert">
+            <strong class="font-bold">Alert!</strong>
+            <span class="block sm:inline">PLEASE UPDATE YOUR PASSWORD</span>
+        </div>
+    </div>
+
+    <!-- CARD COMPONENT -->
+    <div class="max-w-sm mx-auto flex items-center p-6 bg-white rounded-lg shadow-xl">
+        <div class="flex-shrink-0">
+            <!-- <img src="image/logo.JPG" alt="logo" class="h-12 w-auto rounded"> -->
+        </div>
+        <div class="ml-6 pt-1">
+            <h4 class="text-xl text-gray-900 ">FARAZZHH</h4>
+            <p class="text-base text-gray-too">You Have a New Message</p>
+        </div>
+    </div>
+
+    <!-- CARD COLUMN -->
 
     <script src="./app.js"></script>
 </body>
